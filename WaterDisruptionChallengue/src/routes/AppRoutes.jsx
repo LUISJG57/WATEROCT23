@@ -6,6 +6,8 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import Blog from '../pages/Blog';
+
 
 export default function AppRoutes() {
   const location = useLocation();
@@ -21,6 +23,11 @@ export default function AppRoutes() {
             </PageTransition>
           } 
         />
+        <Route path="/blog"
+         element={<PageTransition>
+         <Blog />
+         </PageTransition>} />
+
         <Route 
           path="/about" 
           element={
